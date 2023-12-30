@@ -1,0 +1,23 @@
+.Porgramming_Languages_Choice{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    & div{
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        & div{
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            border-radius: 20px;
+            padding: 10px;
+            border: 1px solid black;
+            cursor: pointer;
+            & img{
+                width: 100px;
+                height: 100px;
+            }
+        }
+    }
+}

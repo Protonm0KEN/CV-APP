@@ -11,6 +11,7 @@
             border-radius: 10px;
             border: 2px solid black;
             & .birthdate-input {
+                cursor: pointer;
                 border: none;
                 padding: none;
                 border-radius: none;
@@ -60,7 +61,7 @@
                 }
             }
         }
-        & input {
+        & input, & textarea {
             display: flex;
             padding: 10px;
             border-radius: 10px;

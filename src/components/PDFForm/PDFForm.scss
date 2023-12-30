@@ -1,0 +1,36 @@
+.PDFForm{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background: rgb(195, 195, 195);
+    &__top{
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        background: rgb(40, 70, 139);
+        width: 100%;
+        padding: 20px;
+        & .PDFForm__username, & .PDFForm__position, & .PDFForm__lastname {
+            font-size: 20px;
+            font-family: Impact, sans-serif;
+            color: white;
+        }
+    }
+    &__bottom{
+        display: flex;
+        align-items: stretch;
+        & .bottom__left{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            background: white;
+            padding: 20px;
+            width: 50%;
+        }
+        & .bottom__right{
+            display: flex;
+            width: 50%;
+            height: 100%;
+        }
+    }
+}
