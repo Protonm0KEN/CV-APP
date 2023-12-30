@@ -71,7 +71,7 @@ const App = () => {
                 userFirstName={userData.firstName}
                 userLastName={userData.lastName}
                 position={selectStack}
-                autoBiography={userData.description}
+                description={userData.description}
                 image={userData.image}
             />
         </div>
