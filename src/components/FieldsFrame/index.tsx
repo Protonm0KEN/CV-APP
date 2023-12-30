@@ -8,23 +8,23 @@ import { useEffect, useState } from "react";
 const FieldsFrame = ({
     state,
     func,
-    isPdfState
+    isPdfState,
 }: {
-    state: any,
-    func : any,
-    isPdfState: any
+    state: any;
+    func: any;
+    isPdfState: any;
 }) => {
-    const [firstName, setFirstName] = useState("");
-    const [lastName, setLastName] = useState("");
-    const [image, setImage] = useState("");
-    const [dateOfBirth, setDateOfBirth] = useState("");
-    const [phoneNumber, setPhoneNumber] = useState(0);
-    const [email, setEmail] = useState("");
-    const [githubLink, setGithubLink] = useState("");
-    const [youtubeLink, setYoutubeLink] = useState("");
-    const [telegramLink, setTelegramLink] = useState("");
-    const [discordLink, setDiscordLink] = useState("");
-    const [description, setDescription] = useState("");
+    const [firstName, setFirstName] = useState<string>("");
+    const [lastName, setLastName] = useState<string>("");
+    const [image, setImage] = useState<string>("");
+    const [dateOfBirth, setDateOfBirth] = useState<string>("");
+    const [phoneNumber, setPhoneNumber] = useState<number>(0);
+    const [email, setEmail] = useState<string>("");
+    const [githubLink, setGithubLink] = useState<string>("");
+    const [youtubeLink, setYoutubeLink] = useState<string>("");
+    const [telegramLink, setTelegramLink] = useState<string>("");
+    const [discordLink, setDiscordLink] = useState<string>("");
+    const [description, setDescription] = useState<string>("");
     useEffect(() => {
         func({
             ...state,
@@ -38,7 +38,7 @@ const FieldsFrame = ({
             youtubeLink,
             telegramLink,
             discordLink,
-            autoBiography: description,
+            description,
         });
     }, [
         firstName,
@@ -87,10 +87,11 @@ const FieldsFrame = ({
                     />
                 </div>
                 <input
-                    onChange={(e) => {
-                        const value: number = Number(e.target.value)
-                        setPhoneNumber(value)}}
-                    value = {phoneNumber}
+                    onChange={e => {
+                        const value: number = Number(e.target.value);
+                        setPhoneNumber(value);
+                    }}
+                    value={phoneNumber}
                     required
                     type="tel"
                     name=""
@@ -98,7 +99,7 @@ const FieldsFrame = ({
                     placeholder="Номер для связи"
                 />
                 <input
-                    onChange={(e) => setEmail(e.target.value)}
+                    onChange={e => setEmail(e.target.value)}
                     required
                     type="email"
                     name="userEmail"

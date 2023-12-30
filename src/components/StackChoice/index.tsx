@@ -21,7 +21,6 @@ const StackChoice = ({
     technologies: any;
     setTechnologies: any;
 }) => {
-    console.log(`Stack Choice ${technologies}`);
     return (
         <div className={isPdfState ? "display_none" : StackChoice}>
             <h1 className="StackChoice__title">ВЫБЕРИТЕ СТЭК</h1>

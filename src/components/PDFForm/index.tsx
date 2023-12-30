@@ -1,16 +1,21 @@
 import { StackChoiceType } from "../../types/StackStype";
 import "./PDFForm.scss";
+import profileIcon from "../../assets/icons/profile.png"
 const PDFForm = ({
     userFirstName,
     userLastName,
     position,
     technologies,
-    autoBiography,
+    description,
     image,
-} : {userFirstName: string, userLastName: string, position: StackChoiceType, technologies: any, autoBiography: string, image: string,}) => {
-    console.log(`PDFForm ${technologies}`);
-    console.log(image);
-    console.log(typeof image);
+}: {
+    userFirstName: string;
+    userLastName: string;
+    position: StackChoiceType;
+    technologies: string[];
+    description: string;
+    image: string;
+}) => {
     return (
         <div className="PDFForm">
             <div className="PDFForm__top">
@@ -32,8 +37,8 @@ const PDFForm = ({
                     })}
                 </div>
                 <div className="bottom__right">
-                    <img src={image} alt="" />
-                    <p>О себе: {autoBiography}</p>
+                    <p>О себе: {description}</p>
+                    <img src={image ? image : profileIcon} alt="" />
                 </div>
             </div>
         </div>

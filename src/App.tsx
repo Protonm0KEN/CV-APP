@@ -6,25 +6,27 @@ import { StackChoiceType } from "./types/StackStype";
 import { UserData } from "./types/userDataType";
 import GeneratePDF from "./components/GeneratePDF";
 import PDFForm from "./components/PDFForm";
+import { languageStateType } from "./types/LanguageType";
 const App = () => {
-    const [selectedLanguagesFromList, setSelectedLanguagesFromList] = useState({
-        javaScript: false,
-        typeScript: false,
-        react: false,
-        css: false,
-        vue: false,
-        html: false,
-        webpack: false,
-        //Backend
-        python: false,
-        sql: false,
-        php: false,
-        java: false,
-        aspnet: false,
-        http: false,
-        //Mobile Dev
-        ReactNative: false,
-    });
+    const [selectedLanguagesFromList, setSelectedLanguagesFromList] =
+        useState<languageStateType>({
+            javaScript: false,
+            typeScript: false,
+            react: false,
+            css: false,
+            vue: false,
+            html: false,
+            webpack: false,
+            //Backend
+            python: false,
+            sql: false,
+            php: false,
+            java: false,
+            aspnet: false,
+            http: false,
+            //Mobile Dev
+            ReactNative: false,
+        });
     const [selectStack, setSelectStack] = useState<StackChoiceType>({
         frontend: true,
         backend: false,
@@ -34,7 +36,7 @@ const App = () => {
     const [userData, setUserData] = useState<UserData>({
         firstName: "",
         lastName: "",
-        autoBiography: "",
+        description: "",
         date: "",
         discordLink: "",
         email: "",
@@ -45,9 +47,8 @@ const App = () => {
         image: "",
         dateOfBirth: "",
     });
-    const [technologies, setTechnologies] = useState([]);
+    const [technologies, setTechnologies] = useState<string[]>([]);
     const [isPdf, setIsPdf] = useState(false);
-    console.log(`Ap ${technologies}`);
     return (
         <div className="layout">
             <FieldsFrame
@@ -70,7 +71,7 @@ const App = () => {
                 userFirstName={userData.firstName}
                 userLastName={userData.lastName}
                 position={selectStack}
-                autoBiography={userData.autoBiography}
+                autoBiography={userData.description}
                 image={userData.image}
             />
         </div>

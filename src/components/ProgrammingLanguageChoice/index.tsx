@@ -26,7 +26,6 @@ const ProgrammingLanguageChoice = ({
     technologies,
     setTechnologies,
 }: {dataState: StackChoiceType, func: Function, state: any, technologies: any, setTechnologies: Function}) => {
-    console.log(`ProgramminLanguageChoice ${technologies}`);
     const languageIcons = {
         //Frontend
         javaScript,

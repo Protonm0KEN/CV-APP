@@ -1,7 +1,7 @@
 export type UserData = {
     firstName: string;
     lastName: string;
-    autoBiography: string;
+    description: string;
     date: string;
     email: string;
     phoneNumber: number;
