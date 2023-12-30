@@ -47,7 +47,7 @@ const App = () => {
     });
     const [technologies, setTechnologies] = useState([]);
     const [isPdf, setIsPdf] = useState(false);
-    console.log(`Ap ${technologies}`)
+    console.log(`Ap ${technologies}`);
     return (
         <div className="layout">
             <FieldsFrame
@@ -56,8 +56,8 @@ const App = () => {
                 func={setUserData}
             />
             <StackChoice
-                technologies = {technologies}
-                setTechnologies = {setTechnologies}
+                technologies={technologies}
+                setTechnologies={setTechnologies}
                 isPdfState={isPdf}
                 selectStack={selectStack}
                 setSelectStack={setSelectStack}
@@ -70,8 +70,8 @@ const App = () => {
                 userFirstName={userData.firstName}
                 userLastName={userData.lastName}
                 position={selectStack}
-                autoBiography = {userData.autoBiography}
-                image = {userData.image}
+                autoBiography={userData.autoBiography}
+                image={userData.image}
             />
         </div>
     );

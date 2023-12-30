@@ -28,7 +28,7 @@ const FieldsFrame = ({ state, func, isPdfState }) => {
             youtubeLink,
             telegramLink,
             discordLink,
-            autoBiography: description
+            autoBiography: description,
         });
     }, [
         firstName,
@@ -101,8 +101,8 @@ const FieldsFrame = ({ state, func, isPdfState }) => {
                     placeholder="Ссылка на github"
                 />
                 <textarea
-                    onChange={(e) => setDescription(e.target.value)}
-                    value = {description}
+                    onChange={e => setDescription(e.target.value)}
+                    value={description}
                     name=""
                     id=""
                     cols="30"

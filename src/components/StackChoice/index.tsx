@@ -4,10 +4,17 @@ import FullStackIcon from "../../assets/icons/full-stack.png";
 import MobileDevIcon from "../../assets/icons/mobile-dev.png";
 import "./StackChoice.scss";
 import ProgrammingLanguageChoice from "../ProgrammingLanguageChoice";
-const StackChoice = ({state, func, selectStack, setSelectStack, isPdfState, technologies, setTechnologies}) => {
-    console.log(`Stack Choice ${technologies}`)
+const StackChoice = ({
+    state,
+    func,
+    selectStack,
+    setSelectStack,
+    isPdfState,
+    technologies,
+    setTechnologies,
+}) => {
+    console.log(`Stack Choice ${technologies}`);
     return (
-
         <div className={isPdfState ? "display_none" : StackChoice}>
             <h1 className="StackChoice__title">ВЫБЕРИТЕ СТЭК</h1>
             <div className="StackChoice__stacks">
@@ -68,7 +75,13 @@ const StackChoice = ({state, func, selectStack, setSelectStack, isPdfState, tech
                     <p>MOBILE DEV</p>
                 </div>
             </div>
-            <ProgrammingLanguageChoice technologies = {technologies} setTechnologies = {setTechnologies} func = {func} state = {state} dataState={selectStack} />
+            <ProgrammingLanguageChoice
+                technologies={technologies}
+                setTechnologies={setTechnologies}
+                func={func}
+                state={state}
+                dataState={selectStack}
+            />
         </div>
     );
 };

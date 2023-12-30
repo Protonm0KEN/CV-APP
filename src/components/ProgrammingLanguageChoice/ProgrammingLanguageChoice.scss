@@ -1,12 +1,12 @@
-.Porgramming_Languages_Choice{
+.Porgramming_Languages_Choice {
     display: flex;
     justify-content: center;
     align-items: center;
-    & div{
+    & div {
         display: flex;
         align-items: center;
         gap: 5px;
-        & div{
+        & div {
             display: flex;
             align-items: center;
             flex-direction: column;
@@ -14,7 +14,7 @@
             padding: 10px;
             border: 1px solid black;
             cursor: pointer;
-            & img{
+            & img {
                 width: 100px;
                 height: 100px;
             }

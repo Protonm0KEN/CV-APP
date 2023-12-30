@@ -1,6 +1,6 @@
 export type StackChoiceType = {
-    frontend: boolean,
-    backend: boolean,
-    fullStack: boolean,
-    mobileDev: boolean,
-}
+    frontend: boolean;
+    backend: boolean;
+    fullStack: boolean;
+    mobileDev: boolean;
+};

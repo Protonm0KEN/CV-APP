@@ -1,4 +1,4 @@
-.generatePdf_button{
+.generatePdf_button {
     display: flex;
     text-align: center;
     align-items: center;
@@ -12,7 +12,7 @@
     border-radius: 20px;
     margin-bottom: 20px;
     transition: 0.3s;
-    &:hover{
+    &:hover {
         color: rgb(0, 162, 255);
     }
 }

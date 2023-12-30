@@ -1,102 +1,99 @@
 import { languageType } from "../../../types/LanguageType";
 
-const LanguagesListComponent = ({ arr, twoArrays, state, func, technologies, setTechnologies }) => {
-    console.log(`LanguageListComponent ${typeof technologies}`)
+const LanguagesListComponent = ({
+    arr,
+    twoArrays,
+    state,
+    func,
+    technologies,
+    setTechnologies,
+}) => {
+    console.log(`LanguageListComponent ${typeof technologies}`);
     const setChosenLanguage = (language: languageType) => {
         if (language.languageName == "JavaScript") {
-             func({
-                ...state, 
+            func({
+                ...state,
                 javaScript: true,
-             });
-             setTechnologies([...technologies, "JavaScript"])
+            });
+            setTechnologies([...technologies, "JavaScript"]);
         } else if (language.languageName == "typeScript") {
-             func({
-                ...state, 
+            func({
+                ...state,
                 typeScript: true,
-             });
-             setTechnologies([...technologies, "TypeScript"])
-        }else if(language.languageName == "css"){
+            });
+            setTechnologies([...technologies, "TypeScript"]);
+        } else if (language.languageName == "css") {
             func({
-                ...state, 
+                ...state,
                 css: true,
-             });
-             setTechnologies([...technologies, "css"])
-        }
-        else if(language.languageName == "vue"){
+            });
+            setTechnologies([...technologies, "css"]);
+        } else if (language.languageName == "vue") {
             func({
-                ...state, 
+                ...state,
                 vue: true,
-             });
-             setTechnologies([...technologies, "vue"])
-        }
-        else if(language.languageName == "http"){
+            });
+            setTechnologies([...technologies, "vue"]);
+        } else if (language.languageName == "http") {
             func({
-                ...state, 
+                ...state,
                 http: true,
-             });
-             setTechnologies([...technologies, "http"])
-        }
-        else if(language.languageName == "react"){
+            });
+            setTechnologies([...technologies, "http"]);
+        } else if (language.languageName == "react") {
             func({
-                ...state, 
+                ...state,
                 react: true,
-             });
-             setTechnologies([...technologies, "react"])
-        }
-        else if(language.languageName == "react-native"){
+            });
+            setTechnologies([...technologies, "react"]);
+        } else if (language.languageName == "react-native") {
             func({
-                ...state, 
+                ...state,
                 ReactNative: true,
-             });
-             setTechnologies([...technologies, "react-native"])
-        }else if(language.languageName == "Java"){
+            });
+            setTechnologies([...technologies, "react-native"]);
+        } else if (language.languageName == "Java") {
             func({
-                ...state, 
+                ...state,
                 java: true,
-             });
-             setTechnologies([...technologies, "Java"])
-        }
-        else if(language.languageName == "python"){
+            });
+            setTechnologies([...technologies, "Java"]);
+        } else if (language.languageName == "python") {
             func({
-                ...state, 
+                ...state,
                 python: true,
-             });
-             setTechnologies([...technologies, "python"])
-        }
-        else if(language.languageName == "Sql"){
+            });
+            setTechnologies([...technologies, "python"]);
+        } else if (language.languageName == "Sql") {
             func({
-                ...state, 
+                ...state,
                 sql: true,
-             });
-             setTechnologies([...technologies, "Sql"])
-        }
-        else if(language.languageName == "aspnet"){
+            });
+            setTechnologies([...technologies, "Sql"]);
+        } else if (language.languageName == "aspnet") {
             func({
-                ...state, 
+                ...state,
                 aspnet: true,
-             });
-             setTechnologies([...technologies, "aspnet"])
-        }
-        else if(language.languageName == "Php"){
+            });
+            setTechnologies([...technologies, "aspnet"]);
+        } else if (language.languageName == "Php") {
             func({
-                ...state, 
+                ...state,
                 php: true,
-             });
-             setTechnologies([...technologies, "Php"])
-        }
-        else if(language.languageName == "html"){
+            });
+            setTechnologies([...technologies, "Php"]);
+        } else if (language.languageName == "html") {
             func({
-                ...state, 
+                ...state,
                 html: true,
-             });
-             setTechnologies([...technologies, "html"])
-        }
-        else if(language.languageName == "webpack"){
+            });
+            setTechnologies([...technologies, "html"]);
+        } else if (language.languageName == "webpack") {
             func({
-                ...state, 
+                ...state,
                 webpack: true,
-             });
-             setTechnologies([...technologies, "webpack"])
+            });
+            setTechnologies([...technologies, "webpack"]);
         }
     };
     if (twoArrays) {

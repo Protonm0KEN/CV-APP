@@ -1,8 +1,15 @@
 import "./PDFForm.scss";
-const PDFForm = ({ userFirstName, userLastName, position, technologies, autoBiography, image }) => {
-    console.log(`PDFForm ${technologies}`)
-    console.log(image)
-    console.log(typeof image)
+const PDFForm = ({
+    userFirstName,
+    userLastName,
+    position,
+    technologies,
+    autoBiography,
+    image,
+}) => {
+    console.log(`PDFForm ${technologies}`);
+    console.log(image);
+    console.log(typeof image);
     return (
         <div className="PDFForm">
             <div className="PDFForm__top">
@@ -20,7 +27,7 @@ const PDFForm = ({ userFirstName, userLastName, position, technologies, autoBiog
                 <div className="bottom__left">
                     Технологии:
                     {technologies.map(lang => {
-                            return <div key={lang}>{lang}</div>;
+                        return <div key={lang}>{lang}</div>;
                     })}
                 </div>
                 <div className="bottom__right">

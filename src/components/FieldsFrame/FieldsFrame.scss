@@ -22,13 +22,13 @@
                 }
             }
         }
-        &-avatar_upload{
+        &-avatar_upload {
             display: flex;
             align-items: center;
             flex-direction: column;
             border: 2px solid black;
             padding: 5px;
-            & button{
+            & button {
                 display: flex;
                 text-align: center;
                 padding: 12px;
@@ -39,12 +39,12 @@
                 background: none;
                 border: 1px solid black;
                 cursor: pointer;
-                &:hover{
+                &:hover {
                     color: white;
                     background: aquamarine;
                 }
             }
-            & input[type="file"]{
+            & input[type="file"] {
                 display: flex;
                 border: none;
                 &::file-selector-button {
@@ -61,7 +61,8 @@
                 }
             }
         }
-        & input, & textarea {
+        & input,
+        & textarea {
             display: flex;
             padding: 10px;
             border-radius: 10px;
@@ -73,11 +74,12 @@
                 border: 2px solid aquamarine;
             }
         }
-        &__social-medias{
-            & h1{
+        &__social-medias {
+            & h1 {
                 font-size: 20px;
                 font-weight: 500;
-                font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+                font-family: Impact, Haettenschweiler, "Arial Narrow Bold",
+                    sans-serif;
             }
             display: flex;
             flex-direction: column;
@@ -86,21 +88,21 @@
             padding: 15px;
             border-radius: 15px;
 
-            & .links{
+            & .links {
                 display: flex;
                 flex-direction: column;
                 gap: 10px;
                 margin-top: 20px;
-                &__link{
+                &__link {
                     display: flex;
                     align-items: center;
                     width: 100%;
-                    & img{
+                    & img {
                         width: 20px;
                         height: 20px;
                         margin-right: 10px;
                     }
-                    & input{
+                    & input {
                         width: 100%;
                     }
                 }

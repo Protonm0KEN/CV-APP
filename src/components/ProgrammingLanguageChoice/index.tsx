@@ -15,12 +15,18 @@ import python from "../../assets/icons/python.png";
 import sql from "../../assets/icons/sql.png";
 import php from "../../assets/icons/php.png";
 import java from "../../assets/icons/java.png";
-import aspnet from "../../assets/icons/aspnet.png"
-import http from "../../assets/icons/http.png"
+import aspnet from "../../assets/icons/aspnet.png";
+import http from "../../assets/icons/http.png";
 //Mobile Dev
-import ReactNative from "../../assets/icons/react-native.jpg"
-const ProgrammingLanguageChoice = ({ dataState, func, state, technologies, setTechnologies }: StackChoiceType) => {
-    console.log(`ProgramminLanguageChoice ${technologies}`)
+import ReactNative from "../../assets/icons/react-native.jpg";
+const ProgrammingLanguageChoice = ({
+    dataState,
+    func,
+    state,
+    technologies,
+    setTechnologies,
+}: StackChoiceType) => {
+    console.log(`ProgramminLanguageChoice ${technologies}`);
     const languageIcons = {
         //Frontend
         javaScript,
@@ -38,7 +44,7 @@ const ProgrammingLanguageChoice = ({ dataState, func, state, technologies, setTe
         aspnet,
         http,
         //Mobile Dev
-        ReactNative
+        ReactNative,
     };
     const frontendLanguages: languageType[] = [
         {
@@ -113,22 +119,46 @@ const ProgrammingLanguageChoice = ({ dataState, func, state, technologies, setTe
             languageName: "HTTP",
             image: languageIcons.http,
         },
-    ]
+    ];
     return (
         <>
             <div className="Porgramming_Languages_Choice">
                 <div className="Porgramming_Languages_Choice__cards">
                     {dataState.frontend && (
-                        <LanguagesListComponent technologies = {technologies} setTechnologies = {setTechnologies} func = {func} state = {state} arr={frontendLanguages} />
+                        <LanguagesListComponent
+                            technologies={technologies}
+                            setTechnologies={setTechnologies}
+                            func={func}
+                            state={state}
+                            arr={frontendLanguages}
+                        />
                     )}
                     {dataState.backend && (
-                        <LanguagesListComponent technologies = {technologies} setTechnologies = {setTechnologies} func = {func} state = {state} arr={backendLanguages} />
+                        <LanguagesListComponent
+                            technologies={technologies}
+                            setTechnologies={setTechnologies}
+                            func={func}
+                            state={state}
+                            arr={backendLanguages}
+                        />
                     )}
                     {dataState.fullStack && (
-                        <LanguagesListComponent technologies = {technologies} setTechnologies = {setTechnologies} func = {func} state = {state} twoArrays={[backendLanguages, frontendLanguages]} />
+                        <LanguagesListComponent
+                            technologies={technologies}
+                            setTechnologies={setTechnologies}
+                            func={func}
+                            state={state}
+                            twoArrays={[backendLanguages, frontendLanguages]}
+                        />
                     )}
                     {dataState.mobileDev && (
-                        <LanguagesListComponent technologies = {technologies} setTechnologies = {setTechnologies} func = {func} state = {state} arr={mobileDevLanguages} />
+                        <LanguagesListComponent
+                            technologies={technologies}
+                            setTechnologies={setTechnologies}
+                            func={func}
+                            state={state}
+                            arr={mobileDevLanguages}
+                        />
                     )}
                 </div>
             </div>
