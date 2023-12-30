@@ -1,0 +1,57 @@
+.StackChoice {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    &__title {
+        text-align: center;
+        font-size: 30px;
+        color: rgb(102, 130, 128);
+        font-family: Impact, sans-serif;
+    }
+    &__stacks {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        padding: 20px;
+        & div {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+            border: 3px solid rgb(0, 225, 255);
+            border-radius: 15px;
+            padding: 20px;
+            cursor: pointer;
+            transition: 0.3s;
+            &:hover {
+                scale: 120%;
+                & p {
+                    color: rgb(0, 162, 255);
+                }
+            }
+            & img {
+                width: 100px;
+                height: 100px;
+            }
+            & p {
+                font-size: 18px;
+                font-family: Impact, sans-serif;
+                font-weight: 500;
+                line-height: 30px;
+            }
+        }
+    }
+    &__slider {
+        & .slider__div {
+            border-radius: 20px;
+            padding: 10px;
+            border: 1px solid black;
+            max-height: min-content;
+            max-width: min-content;
+            & img {
+                max-height: 100px;
+                max-width: 100px;
+            }
+        }
+    }
+}

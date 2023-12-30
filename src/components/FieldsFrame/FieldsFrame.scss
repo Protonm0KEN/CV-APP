@@ -1,0 +1,109 @@
+.FieldsFrame {
+    margin-top: 30px;
+    & .input_fields {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        &-birthdate {
+            display: flex;
+            flex-direction: column;
+            padding: 10px;
+            border-radius: 10px;
+            border: 2px solid black;
+            & .birthdate-input {
+                border: none;
+                padding: none;
+                border-radius: none;
+                &:hover,
+                &:active,
+                &:focus {
+                    border: none;
+                }
+            }
+        }
+        &-avatar_upload{
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            border: 2px solid black;
+            padding: 5px;
+            & button{
+                display: flex;
+                text-align: center;
+                padding: 12px;
+                border: 10px;
+                border-radius: 10px;
+                font-size: 17px;
+                color: aquamarine;
+                background: none;
+                border: 1px solid black;
+                cursor: pointer;
+                &:hover{
+                    color: white;
+                    background: aquamarine;
+                }
+            }
+            & input[type="file"]{
+                display: flex;
+                border: none;
+                &::file-selector-button {
+                    display: flex;
+                    text-align: center;
+                    justify-content: center;
+                    padding: 5px;
+                    background-color: slateblue;
+                    color: white;
+                    font-size: 17px;
+                    font-weight: 600;
+                    border-radius: 20px;
+                    border: 2px solid black;
+                }
+            }
+        }
+        & input {
+            display: flex;
+            padding: 10px;
+            border-radius: 10px;
+            background-color: rgb(255, 255, 255);
+            border: 2px solid black;
+            &:hover,
+            &:active,
+            &:focus {
+                border: 2px solid aquamarine;
+            }
+        }
+        &__social-medias{
+            & h1{
+                font-size: 20px;
+                font-weight: 500;
+                font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            }
+            display: flex;
+            flex-direction: column;
+            margin-top: 50px;
+            border: 2px solid black;
+            padding: 15px;
+            border-radius: 15px;
+
+            & .links{
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+                margin-top: 20px;
+                &__link{
+                    display: flex;
+                    align-items: center;
+                    width: 100%;
+                    & img{
+                        width: 20px;
+                        height: 20px;
+                        margin-right: 10px;
+                    }
+                    & input{
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
