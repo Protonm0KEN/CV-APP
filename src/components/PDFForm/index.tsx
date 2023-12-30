@@ -1,3 +1,4 @@
+import { StackChoiceType } from "../../types/StackStype";
 import "./PDFForm.scss";
 const PDFForm = ({
     userFirstName,
@@ -6,7 +7,7 @@ const PDFForm = ({
     technologies,
     autoBiography,
     image,
-}) => {
+} : {userFirstName: string, userLastName: string, position: StackChoiceType, technologies: any, autoBiography: string, image: string,}) => {
     console.log(`PDFForm ${technologies}`);
     console.log(image);
     console.log(typeof image);
@@ -26,7 +27,7 @@ const PDFForm = ({
             <div className="PDFForm__bottom">
                 <div className="bottom__left">
                     Технологии:
-                    {technologies.map(lang => {
+                    {technologies.map((lang: any) => {
                         return <div key={lang}>{lang}</div>;
                     })}
                 </div>

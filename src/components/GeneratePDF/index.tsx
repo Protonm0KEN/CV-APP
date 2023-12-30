@@ -1,5 +1,5 @@
 import "./GenratePDF.scss";
-const GeneratePDF = ({ func, state }) => {
+const GeneratePDF = ({ func, state } : {func: Function, state: any}) => {
     return (
         <div
             onClick={() => {

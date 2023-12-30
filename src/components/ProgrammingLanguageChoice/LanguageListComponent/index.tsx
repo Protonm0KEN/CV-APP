@@ -7,7 +7,7 @@ const LanguagesListComponent = ({
     func,
     technologies,
     setTechnologies,
-}) => {
+} : {arr?: any, twoArrays?: any, state?: any, func: Function, technologies?: any, setTechnologies: Function}) => {
     console.log(`LanguageListComponent ${typeof technologies}`);
     const setChosenLanguage = (language: languageType) => {
         if (language.languageName == "JavaScript") {

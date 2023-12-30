@@ -12,6 +12,14 @@ const StackChoice = ({
     isPdfState,
     technologies,
     setTechnologies,
+}: {
+    state: any;
+    func: Function;
+    selectStack: any;
+    setSelectStack: any;
+    isPdfState: any;
+    technologies: any;
+    setTechnologies: any;
 }) => {
     console.log(`Stack Choice ${technologies}`);
     return (

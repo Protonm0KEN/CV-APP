@@ -1,15 +1,25 @@
+/* eslint no-use-before-define: 0 */
 import "./FieldsFrame.scss";
 import YoutubeIcon from "../../assets/icons/youtube.png";
 import TelegramIcon from "../../assets/icons/telegram.png";
 import DiscordIcon from "../../assets/icons/discord.png";
 import { useEffect, useState } from "react";
-const FieldsFrame = ({ state, func, isPdfState }) => {
+
+const FieldsFrame = ({
+    state,
+    func,
+    isPdfState
+}: {
+    state: any,
+    func : any,
+    isPdfState: any
+}) => {
     const [firstName, setFirstName] = useState("");
     const [lastName, setLastName] = useState("");
     const [image, setImage] = useState("");
     const [dateOfBirth, setDateOfBirth] = useState("");
-    const [phoneNumber, setPhoneNumber] = useState<number>();
-    const [email, setEmail] = useState();
+    const [phoneNumber, setPhoneNumber] = useState(0);
+    const [email, setEmail] = useState("");
     const [githubLink, setGithubLink] = useState("");
     const [youtubeLink, setYoutubeLink] = useState("");
     const [telegramLink, setTelegramLink] = useState("");
@@ -77,7 +87,10 @@ const FieldsFrame = ({ state, func, isPdfState }) => {
                     />
                 </div>
                 <input
-                    onChange={e => setPhoneNumber(e.target.value)}
+                    onChange={(e) => {
+                        const value: number = Number(e.target.value)
+                        setPhoneNumber(value)}}
+                    value = {phoneNumber}
                     required
                     type="tel"
                     name=""
@@ -85,7 +98,7 @@ const FieldsFrame = ({ state, func, isPdfState }) => {
                     placeholder="Номер для связи"
                 />
                 <input
-                    onChange={e => setEmail(e.target.value)}
+                    onChange={(e) => setEmail(e.target.value)}
                     required
                     type="email"
                     name="userEmail"
