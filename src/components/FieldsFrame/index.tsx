@@ -18,7 +18,7 @@ const FieldsFrame = ({
     const [lastName, setLastName] = useState<string>("");
     const [image, setImage] = useState<string>("");
     const [dateOfBirth, setDateOfBirth] = useState<string>("");
-    const [phoneNumber, setPhoneNumber] = useState<number>(0);
+    const [phoneNumber, setPhoneNumber] = useState<number>();
     const [email, setEmail] = useState<string>("");
     const [githubLink, setGithubLink] = useState<string>("");
     const [youtubeLink, setYoutubeLink] = useState<string>("");
@@ -50,6 +50,7 @@ const FieldsFrame = ({
         githubLink,
         telegramLink,
         youtubeLink,
+        description
     ]);
     return (
         <div className={isPdfState ? "display_none" : "FieldsFrame"}>

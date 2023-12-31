@@ -50,7 +50,7 @@ const App = () => {
     const [technologies, setTechnologies] = useState<string[]>([]);
     const [isPdf, setIsPdf] = useState(false);
     return (
-        <div className="layout">
+        <div className={isPdf ? "gap_0" : "layout"}>
             <FieldsFrame
                 isPdfState={isPdf}
                 state={userData}
@@ -73,6 +73,13 @@ const App = () => {
                 position={selectStack}
                 description={userData.description}
                 image={userData.image}
+                email={userData.email}
+                number={userData.phoneNumber}
+                dateOfBirth={userData.dateOfBirth}
+                githubLink={userData.githubLink}
+                youtubeLink={userData.youtubeLink}
+                telegramLink={userData.telegramLink}
+                discordLink={userData.discordLink}
             />
         </div>
     );

@@ -9,7 +9,7 @@ const LanguagesListComponent = ({
     setTechnologies,
 }: {
     arr?: languageType[];
-    twoArrays?:  Object[] | any ;
+    twoArrays?: Object[] | any;
     state?: {};
     func: Function;
     technologies?: any;
@@ -21,85 +21,113 @@ const LanguagesListComponent = ({
                 ...state,
                 javaScript: true,
             });
-            setTechnologies([...technologies, "JavaScript"]);
+            if (technologies.includes("JavaScript") === false) {
+                setTechnologies([...technologies, "JavaScript"]);
+            }
         } else if (language.languageName == "typeScript") {
             func({
                 ...state,
                 typeScript: true,
             });
-            setTechnologies([...technologies, "TypeScript"]);
+            if (technologies.includes("TypeScript") === false) {
+                setTechnologies([...technologies, "TypeScript"]);
+            }
         } else if (language.languageName == "css") {
             func({
                 ...state,
                 css: true,
             });
-            setTechnologies([...technologies, "css"]);
+            if (technologies.includes("css") === false) {
+                setTechnologies([...technologies, "css"]);
+            }
         } else if (language.languageName == "vue") {
             func({
                 ...state,
                 vue: true,
             });
-            setTechnologies([...technologies, "vue"]);
+            if (technologies.includes("vue") === false) {
+                setTechnologies([...technologies, "vue"]);
+            }
         } else if (language.languageName == "http") {
             func({
                 ...state,
                 http: true,
             });
-            setTechnologies([...technologies, "http"]);
+            if (technologies.includes("http") === false) {
+                setTechnologies([...technologies, "http"]);
+            }
         } else if (language.languageName == "react") {
             func({
                 ...state,
                 react: true,
             });
-            setTechnologies([...technologies, "react"]);
+            if (technologies.includes("react") === false) {
+                setTechnologies([...technologies, "react"]);
+            }
         } else if (language.languageName == "react-native") {
             func({
                 ...state,
                 ReactNative: true,
             });
-            setTechnologies([...technologies, "react-native"]);
+            if (technologies.includes("react-native") === false) {
+                setTechnologies([...technologies, "react-native"]);
+            }
         } else if (language.languageName == "Java") {
             func({
                 ...state,
                 java: true,
             });
-            setTechnologies([...technologies, "Java"]);
+            if (technologies.includes("Java") === false) {
+                setTechnologies([...technologies, "Java"]);
+            }
         } else if (language.languageName == "python") {
             func({
                 ...state,
                 python: true,
             });
-            setTechnologies([...technologies, "python"]);
+            if (technologies.includes("python") === false) {
+                setTechnologies([...technologies, "python"]);
+            }
         } else if (language.languageName == "Sql") {
             func({
                 ...state,
                 sql: true,
             });
-            setTechnologies([...technologies, "Sql"]);
+            if (technologies.includes("Sql") === false) {
+                setTechnologies([...technologies, "Sql"]);
+            }
         } else if (language.languageName == "aspnet") {
             func({
                 ...state,
                 aspnet: true,
             });
-            setTechnologies([...technologies, "aspnet"]);
+            if (technologies.includes("aspnet") === false) {
+                setTechnologies([...technologies, "aspnet"]);
+            }
         } else if (language.languageName == "Php") {
             func({
                 ...state,
                 php: true,
             });
-            setTechnologies([...technologies, "Php"]);
+            if (technologies.includes("Php") === false) {
+                setTechnologies([...technologies, "Php"]);
+            }
         } else if (language.languageName == "html") {
             func({
                 ...state,
                 html: true,
             });
-            setTechnologies([...technologies, "html"]);
+            if (technologies.includes("html") === false) {
+                setTechnologies([...technologies, "html"]);
+            }
         } else if (language.languageName == "webpack") {
             func({
                 ...state,
                 webpack: true,
             });
-            setTechnologies([...technologies, "webpack"]);
+            if (technologies.includes("webpack") === false) {
+                setTechnologies([...technologies, "webpack"]);
+            }
         }
     };
     if (twoArrays) {
