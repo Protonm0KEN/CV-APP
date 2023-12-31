@@ -50,56 +50,118 @@ const PDFForm = ({
             <div className="PDFForm__bottom">
                 <div className="bottom__left">
                     Технологии:
-                    <div>
-                        {technologies.map((lang: any) => {
-                            return (
-                                <div key={lang}>
-                                    {lang === "JavaScript" ? (
-                                        <img src={languageIcons.javaScript} />
-                                    ) : null}
-                                    {lang === "typeScript" ? (
-                                        <img src={languageIcons.typeScript} />
-                                    ) : null}
-                                    {lang === "react" ? (
-                                        <img src={languageIcons.react} />
-                                    ) : null}
-                                    {lang === "css" ? (
-                                        <img src={languageIcons.css} />
-                                    ) : null}
-                                    {lang === "vue" ? (
-                                        <img src={languageIcons.vue} />
-                                    ) : null}
-                                    {lang === "html" ? (
-                                        <img src={languageIcons.html} />
-                                    ) : null}
-                                    {lang === "python" ? (
-                                        <img src={languageIcons.python} />
-                                    ) : null}
-                                    {lang === "Sql" ? (
-                                        <img src={languageIcons.sql} />
-                                    ) : null}
-                                    {lang === "Php" ? (
-                                        <img src={languageIcons.php} />
-                                    ) : null}
-                                    {lang === "Java" ? (
-                                        <img src={languageIcons.java} />
-                                    ) : null}
-                                    {lang === "aspnet" ? (
-                                        <img src={languageIcons.aspnet} />
-                                    ) : null}
-                                    {lang === "http" ? (
-                                        <img src={languageIcons.http} />
-                                    ) : null}
-                                    {lang === "react-native" ? (
-                                        <img src={languageIcons.ReactNative} />
-                                    ) : null}
-                                    {lang === "webpack" ? (
-                                        <img src={languageIcons.webpack} />
-                                    ) : null}
-                                </div>
-                            );
-                        })}
-                    </div>
+                    {technologies.length > 0 ? (
+                        <>
+                            <div>
+                                {technologies.length > 0
+                                    ? technologies.map((lang: any) => {
+                                          return (
+                                              <div key={lang}>
+                                                  {lang === "JavaScript" ? (
+                                                      <img
+                                                          src={
+                                                              languageIcons.javaScript
+                                                          }
+                                                      />
+                                                  ) : null}
+                                                  {lang === "typeScript" ? (
+                                                      <img
+                                                          src={
+                                                              languageIcons.typeScript
+                                                          }
+                                                      />
+                                                  ) : null}
+                                                  {lang === "react" ? (
+                                                      <img
+                                                          src={
+                                                              languageIcons.react
+                                                          }
+                                                      />
+                                                  ) : null}
+                                                  {lang === "css" ? (
+                                                      <img
+                                                          src={
+                                                              languageIcons.css
+                                                          }
+                                                      />
+                                                  ) : null}
+                                                  {lang === "vue" ? (
+                                                      <img
+                                                          src={
+                                                              languageIcons.vue
+                                                          }
+                                                      />
+                                                  ) : null}
+                                                  {lang === "html" ? (
+                                                      <img
+                                                          src={
+                                                              languageIcons.html
+                                                          }
+                                                      />
+                                                  ) : null}
+                                                  {lang === "python" ? (
+                                                      <img
+                                                          src={
+                                                              languageIcons.python
+                                                          }
+                                                      />
+                                                  ) : null}
+                                                  {lang === "Sql" ? (
+                                                      <img
+                                                          src={
+                                                              languageIcons.sql
+                                                          }
+                                                      />
+                                                  ) : null}
+                                                  {lang === "Php" ? (
+                                                      <img
+                                                          src={
+                                                              languageIcons.php
+                                                          }
+                                                      />
+                                                  ) : null}
+                                                  {lang === "Java" ? (
+                                                      <img
+                                                          src={
+                                                              languageIcons.java
+                                                          }
+                                                      />
+                                                  ) : null}
+                                                  {lang === "aspnet" ? (
+                                                      <img
+                                                          src={
+                                                              languageIcons.aspnet
+                                                          }
+                                                      />
+                                                  ) : null}
+                                                  {lang === "http" ? (
+                                                      <img
+                                                          src={
+                                                              languageIcons.http
+                                                          }
+                                                      />
+                                                  ) : null}
+                                                  {lang === "react-native" ? (
+                                                      <img
+                                                          src={
+                                                              languageIcons.ReactNative
+                                                          }
+                                                      />
+                                                  ) : null}
+                                                  {lang === "webpack" ? (
+                                                      <img
+                                                          src={
+                                                              languageIcons.webpack
+                                                          }
+                                                      />
+                                                  ) : null}
+                                              </div>
+                                          );
+                                      })
+                                    : null}
+                            </div>
+                        </>
+                    ) : null}
                 </div>
                 <div className="bottom__right">
                     <div className="info-top">

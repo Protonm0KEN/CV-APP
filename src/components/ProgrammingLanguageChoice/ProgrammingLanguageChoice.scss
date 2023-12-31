@@ -5,7 +5,9 @@
     & div {
         display: flex;
         align-items: center;
-        gap: 5px;
+        gap: 10px;
+        flex-flow: wrap;
+        justify-content: center;
         & div {
             display: flex;
             align-items: center;
