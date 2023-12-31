@@ -29,8 +29,8 @@ const LanguagesListComponent = ({
                 ...state,
                 typeScript: true,
             });
-            if (technologies.includes("TypeScript") === false) {
-                setTechnologies([...technologies, "TypeScript"]);
+            if (technologies.includes("typeScript") === false) {
+                setTechnologies([...technologies, "typeScript"]);
             }
         } else if (language.languageName == "css") {
             func({
